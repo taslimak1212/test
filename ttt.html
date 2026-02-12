@@ -54,7 +54,10 @@
 <div class="board" id="board"></div>
 
 <div id="status">Player X's turn</div>
+
 <button onclick="resetGame()">Restart</button>
+<br>
+<button onclick="goToTest2()">Go to Test2 Page</button>
 
 <script>
 const board = document.getElementById("board");
@@ -86,7 +89,6 @@ function createBoard() {
 
 function handleClick(e) {
     const cell = e.target;
-    const index = cell.dataset.index;
 
     if (!gameActive || cell.textContent !== "") return;
 
@@ -121,6 +123,10 @@ function resetGame() {
     gameActive = true;
     statusText.textContent = "Player X's turn";
     createBoard();
+}
+
+function goToTest2() {
+    window.location.href = "test2.html";
 }
 
 createBoard();
