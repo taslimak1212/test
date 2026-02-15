@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Career Portal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+}
+
+/* Header */
+header {
+    background-color: #002b5c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #004080, #0066cc);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Navigation cards */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: #002b5c;
+}
+
+.card p {
+    margin: 15px 0;
+}
+
+.card button {
+    padding: 12px 20px;
+    background-color: #0066cc;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card button:hover {
+    background-color: #004080;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #002b5c;
+    color: white;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Student Career Portal</h1>
+<p>Your future starts here</p>
+</header>
+
+<section class="hero">
+<h1>Welcome Students</h1>
+<p>Create professional CVs, write cover letters, and explore career opportunities</p>
+</section>
+
+<div class="container">
+
+<div class="card">
+<h2>CV Builder</h2>
+<p>Create or edit your professional CV</p>
+<button onclick="goToPage('cv.html')">Open CV Builder</button>
+</div>
+
+<div class="card">
+<h2>Cover Letters</h2>
+<p>Write and manage your cover letters</p>
+<button onclick="goToPage('coverletter.html')">Open Cover Letters</button>
+</div>
+
+<div class="card">
+<h2>Career Opportunities</h2>
+<p>Explore jobs, internships, and apprenticeships</p>
+<button onclick="goToPage('careers.html')">View Opportunities</button>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Student Career Portal</p>
+</footer>
+
+<script>
+
+function goToPage(page) {
+    window.location.href = page;
+}
+
+</script>
+
+</body>
+</html>
